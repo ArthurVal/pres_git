@@ -1,13 +1,14 @@
-<!doctype html>
+ com<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>reveal.js</title>
+        <title>L3A Technical Presentation: Git for newbie</title>
 
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/black.css">
+        <!-- <link rel="stylesheet" href="css/theme/league.css"> -->
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,30 +27,52 @@
         <div class="reveal">
             <div class="slides">
 
-                <!-- (1) Title -->
-                <section data-markdown>
-                    # Versionning
-                    ## What ? Why ?
-                    A brief introduction to code version control and GIT, by Thibaut Vercueil and Arthur Valiente
+                <!-- (1) PART I - Versionning -->
+                <section>
+                    <section>
+                        <h1> Versionning </h1>
+                        <h2> What for ?</h2>
+                        <h2> Why bother ?</h2>
+                        <p>A brief introduction to code version control and GIT, by Thibaut Vercueil and Arthur Valiente</p>
+                    </section>
 
-                    _October 2017_
+
+                    <section id="fragnents">
+                        <h2>Why versionning ?</h2>
+                        <ol>
+                            <li class="fragment">Remember what you have done!</li>
+                            <li class="fragment">Tag versions</li>
+                            <li class="fragment">Parallel developpement (branching)</li>
+                            <li class="fragment">Backup </li>
+                            <li class="fragment">Work together</li>
+                        </ol>
+                    </section>
                 </section>
 
-                <!-- (2) PART I - Versionning -->
-                <section id="fragnents">
-                    <h2>Why versionning ?</h2>
-                    <ol>
-                        <li class="fragment">Remember what you have done!</li>
-                        <li class="fragment">Tag versions</li>
-                        <li class="fragment">Parallel developpement (branching)</li>
-                        <li class="fragment">Backup </li>
-                        <li class="fragment">Work together</li>
-                    </ol>
+                <!-- () PART II - Git -->
+                <section>
+                    <section>
+                        <h1> Git </h1>
+                    </section>
                 </section>
 
                 <!-- (3) PART I - Versionning -->
                 <section>
-
+                    <h1> <b>Outline</b> </h1>
+                    <ol>
+                        <li class="fragment"><b>Git Surviving:</b></li>
+                        <ul class="fragment">
+                            <li class="fragment"> <i>init - clone</i> </li>
+                            <li class="fragment"> <i>commit - reset</i> </li>
+                            <li class="fragment"> <i>logging</i> </li>
+                        </ul>
+                        <li class="fragment"><b>Git Advanced:</b></li>
+                        <ul class="fragment">
+                            <li class="fragment"> <i>branching</i> </li>
+                            <li class="fragment"> <i>merge - rebase - mergetools</i> </li>
+                            <li class="fragment"> <i>remotes - fetch - pull - push</i> </li>
+                        </ul>
+                    </ol>
                 </section>
             </div>
         </div>
@@ -63,7 +86,7 @@
          // - https://github.com/hakimel/reveal.js#dependencies
          Reveal.initialize({
              slideNumber: true,
-             controls: false,
+             controls: true,
 
 				     dependencies: [
 					       { src: 'plugin/markdown/marked.js' },
